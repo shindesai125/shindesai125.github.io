@@ -132,6 +132,22 @@ export default {
             opacity: "0",
           },
         },
+        "slide-down": {
+          "0%": {
+            transform: "translateY(-100%)",
+            opacity: "0",
+          },
+          "10%": {
+            opacity: "1",
+          },
+          "90%": {
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(100vh)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -142,6 +158,7 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "typing": "typing 3s steps(30, end)",
         "blink": "blink 0.7s infinite",
+        "slide-down": "slide-down 15s linear infinite",
       },
     },
   },
